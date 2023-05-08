@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.random_name_generator;
+package com.mycompany.voting_program;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +14,15 @@ import java.util.Scanner;
  *
  * @author user
  */
-public class Random {
+public class Vote {
 
     public static void main(String[] args) {
-        Vote obj = new Vote();
+        Voting obj = new Voting();
         obj.main_();
     }
 }
 
-class Vote {
+class Voting {
 
     List<String> chizzy_poll = new ArrayList<>();
     List<String> Alicia_poll = new ArrayList<>();
