@@ -50,7 +50,7 @@ class Voting {
 
     public void main_() {
         System.out.println("Candidates");
-        String[] candidates = {"1. Chizzy", "2. Alicia", "3. Isaiah", "4. Muiz", "5. Amara", "6. Emma_boostrap", "7. Favour", "8. Emma", "9. Taiwo", "10. Abraham", "11. Olaolu", "12. vote result\n"};
+        String[] candidates = {"1. Chizzy", "2. Alicia", "3. Isaiah", "4. Muiz", "5. Amara", "6. Emma_boostrap", "7. Favour", "8. Emma", "9. Taiwo", "10. Abraham", "11. Olaolu", "12. Vote results", "13. Exit program\n"};
         for (String i : candidates) {
             System.out.println(i);
         }
@@ -164,9 +164,15 @@ class Voting {
             case "12":
                 display();
                 break;
-
+            
+            case "13":
+                System.out.println("you have sucessfully exited the program.");
+                System.exit(0);
+                break;
+                
             default:
-                System.out.println("please input");
+                System.out.println("Baba type something!!");
+                main_();
                 break;
         }
     }
@@ -182,7 +188,8 @@ class Voting {
         System.out.println("Emma has " + Emma_poll.size() + " votes");
         System.out.println("Taiwo has " + Taiwo_poll.size() + " votes");
         System.out.println("Abraham has " + Abraham_poll.size() + " votes");
-        System.out.println("Olaolu has " + Olaolu_poll.size() + " votes");
+        System.out.println("Olaolu has " + Olaolu_poll.size() + " votes\n");
+        main_();
     }
 
 }
