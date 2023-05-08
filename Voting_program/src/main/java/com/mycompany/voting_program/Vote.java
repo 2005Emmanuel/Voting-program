@@ -32,6 +32,9 @@ class Voting {
     List<String> Emma_boostrap_poll = new ArrayList<>();
     List<String> Favour_poll = new ArrayList<>();
     List<String> Emma_poll = new ArrayList<>();
+    List<String> Taiwo_poll = new ArrayList<>();
+    List<String> Abraham_poll = new ArrayList<>();
+    List<String> Olaolu_poll = new ArrayList<>();
     String select;
     String candidate_1;
     String candidate_2;
@@ -41,10 +44,13 @@ class Voting {
     String candidate_6;
     String candidate_7;
     String candidate_8;
+    String candidate_9;
+    String candidate_10;
+    String candidate_11;
 
     public void main_() {
         System.out.println("Candidates");
-        String[] candidates = {"1. Chizzy", "2. Alicia", "3. Isaiah", "4. Muiz", "5. Amara", "6. Emma_boostrap", "7. Favour", "8. Emma", "9. vote result\n"};
+        String[] candidates = {"1. Chizzy", "2. Alicia", "3. Isaiah", "4. Muiz", "5. Amara", "6. Emma_boostrap", "7. Favour", "8. Emma", "9. Taiwo", "10. Abraham", "11. Olaolu", "12. vote result\n"};
         for (String i : candidates) {
             System.out.println(i);
         }
@@ -127,8 +133,35 @@ class Voting {
                 System.out.println("\nyou have sucesfully casted your vote for Emma\n");
                 main_();
                 break;
+                
+             case "9":
+                System.out.println("Enter the candidate's name to vote\n");
+                Scanner scanner_obj10 = new Scanner(System.in);
+                candidate_9 = scanner_obj10.nextLine();
+                Taiwo_poll.add(candidate_9);
+                System.out.println("\nyou have sucesfully casted your vote for Taiwo\n");
+                main_();
+                break;
+               
+             case "10":
+                System.out.println("Enter the candidate's name to vote\n");
+                Scanner scanner_obj11 = new Scanner(System.in);
+                candidate_10 = scanner_obj11.nextLine();
+                Abraham_poll.add(candidate_10);
+                System.out.println("\nyou have sucesfully casted your vote for Abraham\n");
+                main_();
+                break;
+               
+             case "11":
+                System.out.println("Enter the candidate's name to vote\n");
+                Scanner scanner_obj12 = new Scanner(System.in);
+                candidate_11 = scanner_obj12.nextLine();
+                Olaolu_poll.add(candidate_11);
+                System.out.println("\nyou have sucesfully casted your vote for Olaolu\n");
+                main_();
+                break;
 
-            case "9":
+            case "12":
                 display();
                 break;
 
@@ -147,6 +180,9 @@ class Voting {
         System.out.println("Emma_boostrap has " + Emma_boostrap_poll.size() + " votes");
         System.out.println("Favour has " + Favour_poll.size() + " votes");
         System.out.println("Emma has " + Emma_poll.size() + " votes");
+        System.out.println("Taiwo has " + Taiwo_poll.size() + " votes");
+        System.out.println("Abraham has " + Abraham_poll.size() + " votes");
+        System.out.println("Olaolu has " + Olaolu_poll.size() + " votes");
     }
 
 }
